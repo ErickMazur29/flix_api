@@ -1,0 +1,1 @@
+projeto inical pela pycodebr para aprender os fundamentos sobre DRF e APIs em django
