@@ -2,6 +2,7 @@ from django.db import models
 from movies.models import Movies
 from django.core.validators import MinValueValidator, MaxValueValidator
 
+
 class Reviews(models.Model):
     movie = models.ForeignKey(Movies, on_delete=models.PROTECT, related_name='review_movie')
     rating = models.PositiveIntegerField(

@@ -7,8 +7,9 @@ from genres.serializers import GenreSerializer
 
 class GenreCreateListView(generics.ListCreateAPIView):
     permission_classes = (IsAuthenticated, GlobalDefaultPermission)
-    queryset = Genres.objects.all() # mostrar todos da lista
+    queryset = Genres.objects.all()
     serializer_class = GenreSerializer
+
 
 class GenreRetrieverUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = (IsAuthenticated, GlobalDefaultPermission)

@@ -10,6 +10,7 @@ class ActorCreateListView(generics.ListCreateAPIView):
     queryset = Actors.objects.all()
     serializer_class = ActorSerializer
 
+
 class ActorRetrieverUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = (IsAuthenticated, GlobalDefaultPermission)
     queryset = Actors.objects.all()

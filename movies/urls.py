@@ -5,4 +5,5 @@ from . import views
 urlpatterns = [
     path('movie/', views.MovieCreateListView.as_view(), name='movie_create_list'),
     path('movie/<int:pk>', views.MovieRetrieverUpdateDestroyView.as_view(), name='movie_retriever_update_destroy'),
+    path('movie/stats', views.MovieStatsView.as_view(), name='movie-stats'),
 ]
